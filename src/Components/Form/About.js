@@ -11,12 +11,12 @@ export class About extends Component  {
   const { values, handleChange } = this.props;
 
   return (
-    <div className="md:w-1/2 mx-auto shadow-xl rounded-2xl pb-2 bg-gray-100">
+    <div className="md:w-1/2 mx-auto shadow-xl rounded-2xl mt-16 pb-2 bg-gray-100">
 
       <div className="contact_content p-16">
         <form className="contact_form">
+        <h2 className="text-center mb-4"> Fill in your details to generate your Will.</h2>
         <div className="info flex-row md:flex md:gap-10">
-          <h2> Fill in your details to generate your Will</h2>
           <div className="contact_form-div">
             <label className="lab"> Full Name </label>
             <input
