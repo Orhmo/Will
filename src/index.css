@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    color:black;
+
+  }
+  h2{
+    @apply font-bold text-3xl mb-2 text-yellow-500;
+  }
+  p{
+    @apply text-base mb-4;
+  }
+  .lab_s{
+    @apply block text-gray-700 text-sm font-bold mb-2 ;
+  }
+  .lab{
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+  .inp_s{
+    @apply shadow appearance-none border rounded py-2 px-3 w-full md:w-1/2 text-gray-700 leading-tight focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+  }
+  .inp{
+    @apply shadow appearance-none border rounded py-2 px-3 w-full text-gray-700 leading-tight focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+  }
+  .drop{
+      @apply shadow border rounded py-2 px-3 md:mb-2 w-full md:w-1/2 text-gray-700 leading-tight focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+  }
+  .btn{
+    @apply border-2 border-yellow-500  bg-yellow-500 text-gray-700 rounded-full uppercase px-2 py-2 mx-4 my-2 font-semibold cursor-pointer hover:bg-yellow-400 hover:text-white transition duration-200 ease-in-out;
+  }
+
+}
