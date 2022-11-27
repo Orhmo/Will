@@ -13,7 +13,7 @@ export class Success extends Component  {
       <p>Your download is ready</p>
     </div>
     <div className="mx-32">
-    <Link to="/Download">
+    <Link to="/download-will">
       <button
       className="btn w-1/2">Download</button>
       </Link>
