@@ -42,9 +42,11 @@ const Footer = () => {
         <div>
             <h2 class="mb-6 text-lg font-semibold text-white  hover:scale-105">SERVICES</h2>
             {services.map((e) => (
+            <Link to = "/forms">
           <div className="text-[14px] mb-2 hover:text-yellow-500 hover:scale-105">
             <span>{e}</span>
           </div>
+          </Link>
         ))}
 	</div>
 
