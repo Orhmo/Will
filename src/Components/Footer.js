@@ -9,7 +9,7 @@ const Footer = () => {
   return (
 
 
-<div className="bg-black text-white">
+<div className="bg-black text-white cursor-pointer">
 
     <div className=" px-16 py-16 grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
 
