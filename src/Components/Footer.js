@@ -46,7 +46,7 @@ const Footer = () => {
 	</div>
 
         <div>
-            <h2 class="mb-6 text-lg font-semibold text-white hover:scale-10">ABOUT US</h2>
+            <h2 class="mb-6 text-lg font-semibold text-white hover:scale-105">ABOUT US</h2>
             {about_us.map((e) => (
           <div className="text-[14px] mb-2 hover:text-yellow-500 hover:scale-105">
             <span>{e}</span>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div>
-            <h2 class="mb-6 text-lg font-semibold text-white hover:scale-10">COMPANY</h2>
+            <h2 class="mb-6 text-lg font-semibold text-white hover:scale-105">COMPANY</h2>
             {company.map((e) => (
           <div className="text-[14px] mb-2 hover:text-yellow-500 hover:scale-105">
             <span>{e}</span>
