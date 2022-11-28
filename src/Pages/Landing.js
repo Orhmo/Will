@@ -34,7 +34,7 @@ const Landing = () => {
           <img
             src={thought}
             alt='thought'
-            className="mx-auto w-1/2 h-1/2 justify-center"
+            className="mx-auto w-1/2 h-1/2 justify-center hover:scale-105"
             />
           <h2 className="font-bold text-3xl">Make up your mind</h2>
           <p>Make a decision to secure your family's future.</p>
@@ -44,7 +44,7 @@ const Landing = () => {
           <img
             src={note}
             alt='note'
-            className="mx-auto w-1/3 h-1/2 justify-center"
+            className="mx-auto w-1/3 h-1/2 justify-center hover:scale-105"
             />
           <h2 className="font-bold text-3xl">Complete the form</h2>
           <p>Answer a few questions and your documents is automatically generated.</p>
@@ -54,7 +54,7 @@ const Landing = () => {
           <img
             src={print}
             alt='print'
-            className="mx-auto w-1/2 h-1/2 justify-center"
+            className="mx-auto w-1/2 h-1/2 justify-center hover:scale-105"
             />
           <h2 className="font-bold text-3xl">Download</h2>
           <p>Your Document is ready!! <br /> Download, Print and Save</p>
