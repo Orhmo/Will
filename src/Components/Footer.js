@@ -14,7 +14,7 @@ const Footer = () => {
     <div className=" px-16 py-16 grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
 
         <div>
-        <div className="p-2 ">
+        <div className="p-2 hover:scale-105">
           <h1
             className="sm:text-2xl md:text-4xl font-bold text-purple-300">
              Will
