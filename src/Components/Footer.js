@@ -18,10 +18,10 @@ const Footer = () => {
         <div className="p-2 hover:scale-105">
           <Link to="/">
           <h1
-            className="sm:text-2xl md:text-4xl font-bold text-purple-300">
+            className="sm:text-3xl md:text-4xl font-bold text-purple-300">
              Will
             <span
-              className="sm:text-lg md:text-2xl font-bold text-yellow-500">
+              className="sm:text-2xl md:text-2xl font-bold text-yellow-500">
                 Generator
             </span>
             </h1>
