@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -10,6 +10,7 @@ const NavBar = () => {
   return (
     <div className="md:px-16 md:py-12 flex justify-between items-center w-full h-20 px-4 m-2 bg-white">
       <div className="p-2">
+      <Link to="/">
         <h1
         className="text-4xl font-bold text-purple-300">
           Will
@@ -17,6 +18,7 @@ const NavBar = () => {
             Generator
           </span>
         </h1>
+        </Link>
       </div>
 
       <ul className="hidden md:flex">

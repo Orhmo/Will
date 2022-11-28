@@ -15,7 +15,7 @@ export class About extends Component  {
 
       <div className="contact_content p-16">
         <form className="contact_form">
-        <div className="info flex-row md:flex md:gap-10">
+        <div className="info flex-row lg:flex lg:gap-10">
           <div className="contact_form-div">
             <label className="lab"> Full Name </label>
             <input
@@ -35,7 +35,7 @@ export class About extends Component  {
                 id="dropdown"
                 onChange={handleChange('gender')}
                 defaultValue={values.gender}
-                className="inp md:px-24 md:mx-2">
+                className="inp lg:px-24 lg:mx-2">
                 <option value=" "> </option>
                 <option value="Male"> Male </option>
                 <option value="Female"> Female </option>

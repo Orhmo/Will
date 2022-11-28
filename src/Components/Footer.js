@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {FaInstagram, FaFacebookF, FaTwitter} from  "react-icons/fa"
 
 const Footer = () => {
@@ -15,6 +16,7 @@ const Footer = () => {
 
         <div>
         <div className="p-2 hover:scale-105">
+          <Link to="/">
           <h1
             className="sm:text-2xl md:text-4xl font-bold text-purple-300">
              Will
@@ -23,6 +25,7 @@ const Footer = () => {
                 Generator
             </span>
             </h1>
+            </Link>
         </div>
 
               <div className="flex mt-16 justify-between w-[100px] ">
