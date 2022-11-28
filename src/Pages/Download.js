@@ -1,40 +1,34 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import html2canvas from "html2canvas";
+import {jsPDF} from 'jspdf';
 
-import Will from './Will'
-import ClimbingBoxLoader from 'react-spinners/ClimbingBoxLoader'
+const Download = ({page1ID, page2ID, downloadFileName}) => {
+    const handleWillDownload = () => {
+        const input1 = document.getElementById (page1ID)
+        html2canvas(input1).then( (canvas) => {
+        const imgData1 = canvas.toDataURL("image/png")
 
+        const input2 = document.getElementById (page2ID)
+        html2canvas(input2).then( (canvas) => {
+        const imgData2 = canvas.toDataURL("image/png")
 
-const Download = () => {
-    const [loading, setLoading] = useState(false)
+        const imgWidth = 400
+        const imgHeight = 600 //canvas.height * imgWidth / canvas.width
+        const pdf = new jsPDF('portrait', 'pt','a4')
 
-    useEffect(() => {
-        setLoading(true)
-        setTimeout(() => {
-            setLoading(false)
-        }, 5000)
-    },[])
+        pdf.addImage (imgData1,"JPEG", 100, 100, imgWidth, imgHeight)
+        pdf.addPage()
+        pdf.saddImage (imgData2,"JPEG", 100, 50, imgWidth, imgHeight)
+    pdf.save(`${(downloadFileName)}`)
+    })
+    })
+  };
   return (
-    <div className="w-full h-full">
-        {
-            loading ?
-            (
-                <div className='loader'>
-                    <ClimbingBoxLoader
-                    className="mx-auto mt-64"
-                    color={'#eab308'}
-                    loading={loading}
-                    size={50}
-                  />
-                  <h2 className=" mt-32 text-center h-full">Generating your will . . .</h2>
-                </div>
-            )
-            :
-                (<Will/>)
-        }
 
-
+    <div>
+        <button onClick={handleWillDownload} className='btn mt-8 mx-12 md:mx-44 px-16 py-2'>Download Will</button>
     </div>
+
   )
 }
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,7 @@
 @layer base{
   body{
     color:black;
+    font-family: 'Red Rose', sans-serif;
   }
   h2{
     @apply font-bold text-3xl mb-2 text-yellow-500;
@@ -13,10 +16,9 @@
     @apply text-base mb-4;
   }
   .family {
-    position: absolute;
     width: 100%;
-    height: auto;
-    min-height: 100%;
+    height: 100vh;
+    min-height: 50%;
     z-index: -1;
     filter: brightness(40%);
   }

@@ -14,7 +14,7 @@ export class Generate extends Component  {
   render(){
 
   return (
-    <div className="md:w-1/2 mx-auto mt-12 shadow-xl rounded-2xl pb-2 bg-gray-100">
+    <div className="md:w-1/2 mx-auto shadow-xl rounded-2xl pb-2 bg-gray-100">
 
     <div className="p-16">
       <h2> Your Will is almost done!!</h2>

@@ -5,11 +5,12 @@ import Legal from '../Components/Form/Legal';
 import Assets from '../Components/Form/Assets';
 import Success from '../Components/Form/Success';
 import Generate from '../Components/Form/Generate';
+import Preview from './Preview'
 
 import React, { Component } from 'react'
 
 
-export class App extends Component  {
+export class Forms extends Component  {
   state = {
     step: 1,
     name: "",
@@ -77,23 +78,25 @@ this.setState({ step: step - 1 });
     this.setState({ [input]: e.target.value });
   };
 
-
-
   render () {
     const { step } = this.state;
+
     const {
       name, email, gender, phoneNumber, address, percentage,beneficiary, exeName, exeEmail, exeNumber, exeAddress,
       altName, altEmail, altNumber, altAddress, gauName, gauEmail, gauNumber, gauAddress, assets1, assets2, assets3, assets4,
-      benirs1, benirs2, benirs3, benirs4, beniry1Name, beniry1Email, beniry1Number, beniry1Address, beniry1Pert,
-      beniry1bEmail, beniry1bNumber, beniry1bAddress, beniry1bPert, beniry1cEmail, beniry1cNumber, beniry1cAddress, beniry1cPert,
+      benirs1, benirs2, benirs3, benirs4, beniry1Name, beniry1Email, beniry1Number, beniry1Address, beniry1Pert,beniry1bName,
+      beniry1bEmail, beniry1bNumber, beniry1bAddress, beniry1bPert, beniry1cName, beniry1cEmail, beniry1cNumber, beniry1cAddress, beniry1cPert, beniry1dName,
       beniry1dEmail, beniry1dNumber, beniry1dAddress, beniry1dPert
      } = this.state;
-    const values = {
+     const values = {
       name, email, gender, phoneNumber, address, percentage, beneficiary, exeName, exeEmail, exeNumber, exeAddress,
       altName, altEmail, altNumber, altAddress, gauName, gauEmail, gauNumber, gauAddress,assets1, assets2, assets3, assets4,
-      benirs1, benirs2, benirs3, benirs4,  beniry1Name, beniry1Email, beniry1Number, beniry1Address, beniry1Pert,
-      beniry1bEmail, beniry1bNumber, beniry1bAddress, beniry1bPert, beniry1cEmail, beniry1cNumber, beniry1cAddress, beniry1cPert,
+      benirs1, benirs2, benirs3, benirs4,  beniry1Name, beniry1Email, beniry1Number, beniry1Address, beniry1Pert, beniry1bName,
+      beniry1bEmail, beniry1bNumber, beniry1bAddress, beniry1bPert, beniry1cName, beniry1cEmail, beniry1cNumber, beniry1cAddress, beniry1cPert, beniry1dName,
       beniry1dEmail, beniry1dNumber, beniry1dAddress, beniry1dPert}
+
+
+
 
     switch(step) {
       case 1:
@@ -130,17 +133,20 @@ this.setState({ step: step - 1 });
               nextStep={ this.nextStep }
               handleChange={ this.handleChange }
               values={ values }
-            />
-            )
+              />
+              )
         case 5:
           return (
-            <Success/>
+            <Preview values={ values }/>
                 )
+        case 6:
+            return (
+              <Success values={ values }/>
+                  )
         default:
           //do nothing
+        }
       }
     }
-  }
 
-
-export default App;
+export default Forms;
