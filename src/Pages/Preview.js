@@ -30,7 +30,7 @@ const Preview = (props) => {
                     loading={loading}
                     size={50}
                   />
-                  <h2 className="mt-32 text-center h-full">Generating your will . . .</h2>
+                  <h2 className="mt-32 text-center h-full mb-64">Generating your will . . .</h2>
                 </div>
             )
             :

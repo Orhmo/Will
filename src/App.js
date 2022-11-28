@@ -8,7 +8,6 @@ import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import Landing from './Pages/Landing';
 import Forms from './Pages/Forms';
-import Preview from './Pages/Preview';
 import Success from './Components/Form/Success';
 
 
@@ -20,7 +19,6 @@ function App() {
           <Routes>
               <Route path='/' element={<Landing />}></Route>
               <Route path='/forms' element={<Forms />}></Route>
-              <Route path='/generate-will' element={<Preview />}></Route>
               <Route path='/download-will' element={<Success />}></Route>
             </Routes>
 

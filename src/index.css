@@ -56,7 +56,7 @@
       @apply shadow border rounded py-2 px-3 md:mb-2 w-full md:w-1/2 text-gray-700 leading-tight focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
   }
   .btn{
-    @apply border-2 border-yellow-500  bg-yellow-500 text-gray-700 rounded-full uppercase px-2 py-2 mx-4 my-2 font-semibold cursor-pointer hover:bg-yellow-400 hover:text-white transition duration-200 ease-in-out;
+    @apply border-2 border-yellow-500  bg-yellow-500 text-gray-700 rounded-full uppercase px-2 py-2 mx-4 my-2 mb-4 font-semibold cursor-pointer hover:bg-yellow-400 hover:text-white transition duration-200 ease-in-out;
   }
 
 }
