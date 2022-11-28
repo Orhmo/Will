@@ -115,7 +115,7 @@ const Will = (props ) => {
       </section>
       <div className="mx-auto justify-center">
       <Download page1ID={"will1"} page2ID={"will2"} downloadFileName={`${props.name} will`} />
-    </div>
+      </div>
     </div>
   );
 };
