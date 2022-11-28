@@ -16,9 +16,9 @@ const Download = ({page1ID, page2ID, downloadFileName}) => {
         const imgHeight = 600 //canvas.height * imgWidth / canvas.width
         const pdf = new jsPDF('portrait', 'pt','a4')
 
-        pdf. addImage (imgData1,"JPEG", 100, 100, imgWidth, imgHeight)
+        pdf.addImage (imgData1,"JPEG", 100, 100, imgWidth, imgHeight)
         pdf.addPage()
-        pdf. addImage (imgData2,"JPEG", 100, 50, imgWidth, imgHeight)
+        pdf.addImage (imgData2,"JPEG", 100, 50, imgWidth, imgHeight)
     pdf.save(`${(downloadFileName)}`)
     })
     })
