@@ -26,7 +26,7 @@ const Landing = () => {
 
         </section>
 
-        <div className="mt-[70vh]">
+        <div className="mt-[80vh]">
           <h2 className="font-bold text-4xl text-center mb-8">The 3-Step Process.</h2>
 
           <div className="mx-auto justify-center text-center grid sm:grid-cols-1 md:grid-cols-3">
